@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>User</th>
+      <th>Id</th>
       <th>Listname</th>
       <th colspan="3"></th>
     </tr>
@@ -15,6 +16,7 @@
     <% @lists.each do |list| %>
       <tr>
         <td><%= list.user.email %></td>
+        <td><%= list.id %></td>
         <td><%= list.listname %></td>
         <!-- <td>< % = link_to 'Show', user_list(@user) %></td>  -->
         <td><%= link_to 'Edit', edit_user_list_path(@user,list) %></td>
